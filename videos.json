@@ -1,0 +1,25 @@
+{
+    "author": "tongtrankien1605",
+
+    "version": "1.0.2",
+
+    "dayUpdate": "2025-06-18",
+
+    "videos": [
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-01.mp4", "title": "Đào Huyền My 01", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-02.mp4", "title": "Đào Huyền My 02", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-03.mp4", "title": "Đào Huyền My 03", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-04.mp4", "title": "Đào Huyền My 04", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-05.mp4", "title": "Đào Huyền My 05", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-06.mp4", "title": "Đào Huyền My 06", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-07.mp4", "title": "Đào Huyền My 07", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-08.mp4", "title": "Đào Huyền My 08", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-09.mp4", "title": "Đào Huyền My 09", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-10.mp4", "title": "Đào Huyền My 10", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-11.mp4", "title": "Đào Huyền My 11", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-12.mp4", "title": "Đào Huyền My 12", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-13.mp4", "title": "Đào Huyền My 13", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-14.mp4", "title": "Đào Huyền My 14", "dayCreate": "2025-06-18" },
+        { "url": "https://cdn.jsdelivr.net/gh/tongtrankien1605/daohuyenmy@main/videos/dao-huyen-my-15.mp4", "title": "Đào Huyền My 15", "dayCreate": "2025-06-18" }
+    ]
+}
