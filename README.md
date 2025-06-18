@@ -1,11 +1,28 @@
-## 🚀  **Lướt video ngắm gái xinh cùng tongtrankien1605 tại xinh35** ! 🚀
-
+## 🚀  **tiktok-clone : Lướt video tương tự tiktok, có xây dựng các Base_URL để khi thay đổi tài khoản hoặc tên repository sẽ không cần sửa logic xử lý mà chỉ cần sửa các BASE_URL** 🚀
 
 **Trang được code dựa theo cấu trúc nhỏ giống Tiktok, dùng để xem các video đã được upload lên server**
 
-<br/>
 
-## 👉 Xem ngay [Ở ĐÂY](https://tongtrankien1605.github.io/xinh35) ạ !
+</br>
+
+## 🌐 Truy cập để xem  [TẠI ĐÂY](https://tongtrankien1605.github.io/tiktok-clone) nhé !
+
+</br>
+
+## 🏆 Đây là code base, có thể sử dụng để xây dựng phát triển thêm các chương trình lớn hơn
+            - Mỗi lần truy cập sẽ tải dữ liệu video từ ( server lưu trữ video CDN jsDelivr ) để xem, không cache video vào Service
+            Worker vì đã sử dụng CDN (  Content Delivery Network )
+            
+            - Service Worker chỉ cache các dữ liệu tĩnh ( html, css,... ) và không cache dữ liệu động ( video,... ) -> Nhiều video
+            cũng không gây tốn cache vì chỉ cache dữ liệu tĩnh có dung lượng nhỏ
+
+            - Note 1: Khi lưu trữ video bằng CDN thì không tính băng thông cho Github Page. Do đó, sau khi thoát ra, và khi truy cập
+            lại sẽ lại tải từ server để xem theo trình tự như vậy
+
+            - Note 2: Tuy nhiên CDN jsDelivr có cơ chế cache HTTP 7 ngày, Nên do đó có thể tận dụng và xem lại video từ cache HTTP mà
+            không cần tải lại từ server CDN cho đến khi cache hết hạn
+
+
 
 </br>
 
@@ -13,12 +30,12 @@
 ## 💻 Giải thích các BASE_URL:
 
     const REPOSITORY_ROOT: Đường dẫn gốc của dự án, dùng để đăng ký Service Worker.
-    ( ví dụ xây dựng trên github có repository là xinh35 => thì REPOSITORY_ROOT = "/xinh35/" )
+    ( ví dụ xây dựng trên github có repository là tiktok-clone => thì REPOSITORY_ROOT = "/tiktok-clone/" )
               
     const VIDEOS_JSON_URL: Đường dẫn đến file JSON chứa thông tin video như Title, URL, Desription, dayCreate
-    ( ví dụ xây dựng trên github có repository là xinh35 => thì const VIDEOS_JSON_URL = `${REPOSITORY_ROOT}videos.json`;
+    ( ví dụ xây dựng trên github có repository là tiktok-clone => thì const VIDEOS_JSON_URL = `${REPOSITORY_ROOT}videos.json`;
 
-    const CACHE_NAME: Tên Cache của Worker Service, lưu ý cần cập nhật ở cả file html & script. ( const CACHE_NAME = "tiktok-clone-v1" )
+    const CACHE_NAME: Tên Cache của Worker Service, lưu ý cần cập nhật ở cả file html & script. ( const CACHE_NAME = "service-worker-v1" )
             
 </br> 
 
@@ -43,7 +60,7 @@
     Đổi CACHE_NAME trong sw.js
     -> Mục đích: Làm mới toàn bộ cache Service Worker bằng cách thay đổi tên cache, buộc tải lại tất cả tài nguyên.
 
-    const CACHE_NAME = "tiktok-clone-v2"; // Từ v1 thành v2
+    const CACHE_NAME = "service-worker-v1"; // Từ v1 thành v2
 
     2. Thay đổi version mỗi khi cập nhật video ( video.json )
     - Cập nhật cache khi thay đổi version
@@ -67,7 +84,7 @@
     Quy trình:
 
     - Bỏ qua cache localStorage vì hết hạn.
-    - Fetch videos.json mới từ server (/xinh35/videos.json?v=<timestamp>).
+    - Fetch videos.json mới từ server (/tiktok-clone/videos.json?v=<timestamp>).
     - Kiểm tra các URL video bằng fetch với method HEAD.
     - Lưu danh sách video mới và version vào localStorage, đặt lại thời hạn 24h.
     - Kiểm tra và xóa video cũ khỏi cache Service Worker (nếu URL không còn trong videos.json).
@@ -77,3 +94,4 @@
     - Đảm bảo tải videos.json mới nếu cache hết hạn, nhưng không bắt buộc version phải thay đổi.
     - Video cũ vẫn tồn tại trong cache Service Worker nếu vẫn có trong videos.json.
     - Băng thông: Tốn cho videos.json và HEAD request; nội dung video tải khi xem (dùng cache nếu có).
+
