@@ -1,4 +1,4 @@
-## 🚀  **tiktok-clone : Lướt video tương tự tiktok, có xây dựng các Base_URL để khi thay đổi tài khoản hoặc tên repository sẽ không cần sửa logic xử lý mà chỉ cần sửa các BASE_URL** 🚀
+## 🚀  **tiktok-clone : Lướt video tương tự tiktok, sử dụng Base_URL để chủ động khi thay đổi tài khoản hoặc tên repository mà không cần sửa logic xử lý** 🚀
 
 **Trang được code dựa theo cấu trúc nhỏ giống Tiktok, dùng để xem các video đã được upload lên server**
 
